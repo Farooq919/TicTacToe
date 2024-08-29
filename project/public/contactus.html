@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-files/contactus.css">
+    <script src="javascript-files/contactus.js" defer></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <h3>TicTacToe.com</h3>
+                </li>
+
+                <li class="link">
+                    <a href="/home">Home</a>
+                </li>
+
+                <li class="link">
+                    <a href="about">About Us</a>
+                </li>
+
+                <li class="link">
+                    <a href="contactUs">Contact Us</a>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+   
+    <form id="contactForm" action="/contactUs" method="post">
+        <div class="input-group">
+            <input type="text" id="name" name="name" placeholder="Enter your Name">
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <label for="opt1">What kind of problem you faced</label>
+        <div class="input-group">
+            <select id="opt1" name="problemType">
+                <option value="Not working Properly">Not working properly</option>
+                <option value="Not Responsive">Not Responsive</option>
+                <option value="Just want to say thank you">Just want to say thank you</option>
+            </select>
+        </div>
+        <div class="textarea">
+            <textarea id="textarea" name="message" placeholder="Enter your message here"></textarea>
+        </div>
+        <button type="submit" id="submitForm">Submit</button>
+    </form>
+</body>
+</html>

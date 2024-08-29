@@ -72,7 +72,7 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
-    width: calc(100% - 110px); /* Adjusted for button width and spacing */
+    width: 100%; /* Adjusted to fill the full width */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -92,7 +92,7 @@ textarea:focus {
 button {
     width: 100px; /* Made button wider */
     padding: 10px;
-    margin-left: 10px;
+    margin-top: 20px; /* Added margin for spacing */
     border: none;
     border-radius: 5px;
     background-color: #003366;
@@ -112,38 +112,14 @@ label {
     color: #333;
 }
 
-.input-group select {
-    width: calc(100% - 110px); /* Align with input fields */
-}
-
-.textarea {
-    width: 100%;
-    max-width: 500px; /* Adjusted width for better alignment */
-    margin-top: 20px; /* Added space above the message box */
-    position: relative; /* Positioning for buttons */
-}
-
 textarea {
     height: 100px;
     resize: vertical;
-    margin-bottom: 10px; /* Adjusted space below the textarea */
+    margin-bottom: 10px;
 }
-
-#saveMessage {
-  
-    position: absolute; /* Positioning button relative to .textarea */
-    right: 0;
-    top: 100%; /* Align below the textarea */
-    left:20%;
-    margin-top: 10px; /* Space between textarea and button */
-    width: 200px; /* Adjust width as needed */
-}
-
-
 
 @media (max-width: 600px) {
-    form,
-    .textarea {
+    form {
         max-width: 100%;
         padding: 0 15px;
     }
